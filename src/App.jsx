@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Order from "./pages/Order.jsx";
 import Login from "./pages/Login.jsx";
+import DasLayout from "./dasLayout/DasLayout.jsx";
 
 const App = () => {
   React.useEffect(() => {
@@ -29,7 +30,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/order" element={<Order />} />
             <Route path="/login" element={<Login />} />
-
+            <Route path="/dasLayout" element={<DasLayout />} />
           </Routes>
         </div>
       </BrowserRouter>
